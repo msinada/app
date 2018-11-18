@@ -15,4 +15,4 @@ gem "thin"
 #gem "sqlite3", :group => [:development,:test]
 gem "pg", :group => :production
 gem "dm-postgres-adapter", :group => :production
-gem "dm-sqlite-adapter", :group => [:development,:test]
+#gem "dm-sqlite-adapter", :group => [:development,:test]
