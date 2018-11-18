@@ -15,6 +15,8 @@ gem "thin"
 group :development, :test do
 	gem 'sqlite3'
 end
-gem "pg", :group => :production
+group :production do
+	gem "pg"
+end
 gem "dm-postgres-adapter", :group => :production
 gem "dm-sqlite-adapter", :group => :developmentRuby
