@@ -11,7 +11,10 @@ source :rubygems
 gem "sinatra" 
 gem "dm-core" 
 gem "dm-migrations" 
-gem "thin" 
+gem "thin"
+group :development, :test do
+	gem 'sqlite3'
+end
 gem "pg", :group => :production
 gem "dm-postgres-adapter", :group => :production
 gem "dm-sqlite-adapter", :group => :developmentRuby
