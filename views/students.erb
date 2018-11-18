@@ -1,0 +1,27 @@
+<center><h1 style="color:black;">Welcome to the Student Records</h1></center>
+<br>
+<h2>Student Records</h2>
+<table>
+	<tr>
+		<th>Name</th>
+
+		<th>Edit/Delete</th>
+	</tr>
+<%@students.each do |student| %>
+
+  <tr>
+	  <th><a href="/students/<%=student.id%>"><%=student.firstname%> <%=student.lastname%></a></th>
+		
+	  <th>
+	  <form action="/students/edit/<%=student.id%>" >
+		  <input type="submit" value="Edit/Delete">
+	  </form>
+	  </th>
+  </tr>
+
+ <%end%>
+</table>
+<br>
+<form action="/students/addStudent">
+	<input type="submit" value="Add a New Student">
+</form>

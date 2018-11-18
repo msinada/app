@@ -1,0 +1,15 @@
+<h1> Edit Student</h1>
+<%if session[:admin]%>
+<form action="/students" method='post'>
+	First Name: <input type='text' name='firstname' value='<%=@students.firstname%>' required><br>
+    Last Name: <input type='text' name='lastname' value='<%=@students.lastname%>' required><br>
+    Birthday: <input type='date' name='birthday' value='<%=@students.birth%>'required><br>
+    Address: <input type='text' name='address' value='<%=@students.address%>'required><br>
+	<input type="hidden" name='id' value="<%=@students.id%>"> 
+	<input type="submit" name='submit' value="Save">
+	<input type="submit" name='delete' value="Delete">
+</form>
+
+<%else%>
+	<% redirect to '/login'%>
+<%end%>

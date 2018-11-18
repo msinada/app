@@ -1,0 +1,4 @@
+Things to work on
+-storing html date to database
+-upload video
+-figure out login

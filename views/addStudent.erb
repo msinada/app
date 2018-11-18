@@ -1,0 +1,15 @@
+<h1> Add new student</h1>
+
+<% if session[:admin]%>
+
+<form action="/students" method='post'>
+	First Name: <input type='text' name='firstname' required ><br>
+	Last Name: <input type='text' name='lastname' required><br>
+	Birthday: <input type='date' name='birthday' required><br>
+	Address: <input type='text' name='address' required><br>
+	<input type="submit" value="Add" name='add' required>
+</form>
+
+<%else%>
+	<% redirect to '/login' %>
+<%end%>

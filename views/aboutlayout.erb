@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link href="/style.css" rel="stylesheet" type="text/css">
+  <style>
+	
+   </style>
+   
+   
+   <title><%= @title || "Student Information System" %></title> 
+	</head>
+	
+	<body> 
+	<div>
+	  <h1 id="h1"> Student Information System </h1>
+<img src="/images/studentsTop.png" alt="students" width=100%>
+
+
+<ul id="ul">
+<li id="li"><a id="a" href="/home">Home</a></li>
+<li id="li"><a id="a" href="/about">About</a></li>
+<li id="li"><a id="a" href="/students">Students</a></li>
+<li id="li"><a id="a" href="/comment">Comment</a></li>
+<li id="li"><a id="a" href="/video">Video</a></li>
+<li id="li"><a id="a" href="/contact">Contact</a></li>
+<%if session[:admin]%>
+	<li id="li"><a id="a" href="/logout">Logout:<b> <%=settings.username%></b></a></li>
+<%else%>
+	<li id="li"><a id="a" href="/login">Login</a></li>
+<%end%>
+</ul>
+	</div>
+<%= yield %>
+
+  </body>
+
+</html>

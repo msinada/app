@@ -1,0 +1,10 @@
+<center><h1 style="color:black;">Welcome to the Comment page</h1></center>
+<form action="/comment/addComment">
+	<input type="submit" value="Add a New Comment Here">
+</form>
+<ul style="list-style-type:none">
+<%@comment.each do |comments|  %>
+	<li> <%=comments.created_at%><br><a href="/comment/<%=comments.commentId %>"><%=comments.content%></a></li>
+<%end%>
+</ul>
+		

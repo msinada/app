@@ -1,0 +1,19 @@
+<h1> Comment # <%=@comment.commentId %> </h1>
+Commentor: <%= @comment.name %><br>
+Posted: <%= @comment.created_at %> <br>
+<hr>
+<%=@comment.content%>
+
+<br><hr>
+<% if @comment.commentId == Comment.first.commentId %>
+	<a href ="/comment">All Comments </a>
+<% else%>
+	<a href="/comment/<%=@comment.commentId-1%>">Previous Comment</a>
+<%end%>
+ ------
+<% if @comment.commentId == Comment.last.commentId %>
+	<a href ="/comment">All Comments </a>
+<% else%>
+	<a href="/comment/<%=@comment.commentId+1%>">Next Comment</a>
+<%end%>
+
