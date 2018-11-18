@@ -12,7 +12,7 @@ gem "sinatra"
 gem "dm-core" 
 gem "dm-migrations" 
 gem "thin"
-gem "sqlite3", :group => [:development,:test]
+#gem "sqlite3", :group => [:development,:test]
 gem "pg", :group => :production
 gem "dm-postgres-adapter", :group => :production
 gem "dm-sqlite-adapter", :group => [:development,:test]
