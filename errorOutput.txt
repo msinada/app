@@ -1,0 +1,183 @@
+-----> Ruby app detected
+-----> Compiling Ruby/Rack
+-----> Using Ruby version: ruby-2.4.5
+###### WARNING:
+       You have the `.bundle/config` file checked into your repository
+        It contains local state like the location of the installed bundle
+        as well as configured git local gems, and other settings that should
+       not be shared between multiple checkouts of a single repo. Please
+       remove the `.bundle/` folder from your repo and add it to your `.gitignore` file.
+       https://devcenter.heroku.com/articles/bundler-configuration
+-----> Installing dependencies using bundler 1.15.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.17.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+       Fetching gem metadata from http://rubygems.org/........
+       Fetching version metadata from http://rubygems.org/.
+       Fetching public_suffix 3.0.3
+       Using bundler 1.15.2
+       Fetching daemons 1.2.6
+       Fetching eventmachine 1.2.7
+       Installing daemons 1.2.6
+       Installing public_suffix 3.0.3
+       Installing eventmachine 1.2.7 with native extensions
+       Fetching mustermann 1.0.3
+       Fetching rack 2.0.6
+       Installing mustermann 1.0.3
+       Installing rack 2.0.6
+       Fetching tilt 2.0.8
+       Installing tilt 2.0.8
+       Fetching addressable 2.5.2
+       Installing addressable 2.5.2
+       Fetching rack-protection 2.0.4
+       Fetching data_objects 0.10.17
+       Installing rack-protection 2.0.4
+       Installing data_objects 0.10.17
+       Fetching dm-core 1.2.1
+       Fetching sinatra 2.0.4
+       Installing sinatra 2.0.4
+       Fetching do_sqlite3 0.10.17
+       Installing dm-core 1.2.1
+       Installing do_sqlite3 0.10.17 with native extensions
+       Fetching dm-do-adapter 1.2.0
+       Installing dm-do-adapter 1.2.0
+       Fetching dm-migrations 1.2.0
+       Installing dm-migrations 1.2.0
+       Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+       
+       current directory:
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/ruby-2.4.5/bin/ruby -r
+       ./siteconf20181120-227-3c7j1q.rb extconf.rb
+       checking for sqlite3.h... no
+       *** extconf.rb failed ***
+       Could not create Makefile due to some reason, probably lack of necessary
+       libraries and/or headers.  Check the mkmf.log file for more details.  You may
+       need configuration options.
+       
+       Provided configuration options:
+       	--with-opt-dir
+       	--without-opt-dir
+       	--with-opt-include
+       	--without-opt-include=${opt-dir}/include
+       	--with-opt-lib
+       	--without-opt-lib=${opt-dir}/lib
+       	--with-make-prog
+       	--without-make-prog
+       	--srcdir=.
+       	--curdir
+       --ruby=/tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/ruby-2.4.5/bin/$(RUBY_BASE_NAME)
+       	--with-sqlite3-dir
+       	--without-sqlite3-dir
+       	--with-sqlite3-include
+       	--without-sqlite3-include=${sqlite3-dir}/include
+       	--with-sqlite3-lib
+       	--without-sqlite3-lib=${sqlite3-dir}/lib
+       
+       To see why this extension failed to compile, please check the mkmf.log which can
+       be found here:
+       
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/extensions/x86_64-linux/2.4.0-static/do_sqlite3-0.10.17/mkmf.log
+       
+       extconf failed, exit code 1
+       
+       Gem files will remain installed in
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/gems/do_sqlite3-0.10.17
+       for inspection.
+       Results logged to
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/extensions/x86_64-linux/2.4.0-static/do_sqlite3-0.10.17/gem_make.out
+       
+       An error occurred while installing do_sqlite3 (0.10.17), and Bundler cannot
+       continue.
+       Make sure that `gem install do_sqlite3 -v '0.10.17'` succeeds before bundling.
+       
+       In Gemfile:
+         dm-sqlite-adapter was resolved to 1.2.0, which depends on
+           do_sqlite3
+       Bundler Output: Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.17.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+       Fetching gem metadata from http://rubygems.org/........
+       Fetching version metadata from http://rubygems.org/.
+       Fetching public_suffix 3.0.3
+       Using bundler 1.15.2
+       Fetching daemons 1.2.6
+       Fetching eventmachine 1.2.7
+       Installing daemons 1.2.6
+       Installing public_suffix 3.0.3
+       Installing eventmachine 1.2.7 with native extensions
+       Fetching mustermann 1.0.3
+       Fetching rack 2.0.6
+       Installing mustermann 1.0.3
+       Installing rack 2.0.6
+       Fetching tilt 2.0.8
+       Installing tilt 2.0.8
+       Fetching addressable 2.5.2
+       Installing addressable 2.5.2
+       Fetching rack-protection 2.0.4
+       Fetching data_objects 0.10.17
+       Installing rack-protection 2.0.4
+       Installing data_objects 0.10.17
+       Fetching dm-core 1.2.1
+       Fetching sinatra 2.0.4
+       Installing sinatra 2.0.4
+       Fetching do_sqlite3 0.10.17
+       Installing dm-core 1.2.1
+       Installing do_sqlite3 0.10.17 with native extensions
+       Fetching dm-do-adapter 1.2.0
+       Installing dm-do-adapter 1.2.0
+       Fetching dm-migrations 1.2.0
+       Installing dm-migrations 1.2.0
+       Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+       
+       current directory:
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/ruby-2.4.5/bin/ruby -r
+       ./siteconf20181120-227-3c7j1q.rb extconf.rb
+       checking for sqlite3.h... no
+       *** extconf.rb failed ***
+       Could not create Makefile due to some reason, probably lack of necessary
+       libraries and/or headers.  Check the mkmf.log file for more details.  You may
+       need configuration options.
+       
+       Provided configuration options:
+       	--with-opt-dir
+       	--without-opt-dir
+       	--with-opt-include
+       	--without-opt-include=${opt-dir}/include
+       	--with-opt-lib
+       	--without-opt-lib=${opt-dir}/lib
+       	--with-make-prog
+       	--without-make-prog
+       	--srcdir=.
+       	--curdir
+       --ruby=/tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/ruby-2.4.5/bin/$(RUBY_BASE_NAME)
+       	--with-sqlite3-dir
+       	--without-sqlite3-dir
+       	--with-sqlite3-include
+       	--without-sqlite3-include=${sqlite3-dir}/include
+       	--with-sqlite3-lib
+       	--without-sqlite3-lib=${sqlite3-dir}/lib
+       
+       To see why this extension failed to compile, please check the mkmf.log which can
+       be found here:
+       
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/extensions/x86_64-linux/2.4.0-static/do_sqlite3-0.10.17/mkmf.log
+       
+       extconf failed, exit code 1
+       
+       Gem files will remain installed in
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/gems/do_sqlite3-0.10.17
+       for inspection.
+       Results logged to
+       /tmp/build_378af6566e312925a93b4fe32afdc0b9/vendor/bundle/ruby/2.4.0/extensions/x86_64-linux/2.4.0-static/do_sqlite3-0.10.17/gem_make.out
+       
+       An error occurred while installing do_sqlite3 (0.10.17), and Bundler cannot
+       continue.
+       Make sure that `gem install do_sqlite3 -v '0.10.17'` succeeds before bundling.
+       
+       In Gemfile:
+         dm-sqlite-adapter was resolved to 1.2.0, which depends on
+           do_sqlite3
+ !
+ !     Failed to install gems via Bundler.
+ !
+ !     Push rejected, failed to compile Ruby app.
+ !     Push failed
