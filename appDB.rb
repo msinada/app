@@ -2,7 +2,9 @@ require "dm-core"
 require "dm-migrations"
 require "dm-timestamps"
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/appDB.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/appDB.db")
+
+#DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/appDB.db")
 
 class StudentsData
 	include DataMapper::Resource 
