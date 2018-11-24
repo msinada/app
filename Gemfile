@@ -6,13 +6,12 @@
 
 # gem "rails"
 #
-
-source :rubygems 
-gem "sinatra" 
-gem "dm-core" 
-gem "dm-migrations" 
+source :rubygems
+gem "sinatra"
+gem "dm-core"
+gem "dm-migrations"
 gem "thin"
-#gem "sqlite3", :group => [:development,:test]
 gem "pg", :group => :production
 gem "dm-postgres-adapter", :group => :production
-gem "dm-sqlite-adapter", :group => [:development,:test]
+gem "dm-sqlite-adapter", :group => :development
+
